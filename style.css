@@ -96,11 +96,26 @@ header {
     width: 80%;
     border: 1px solid black;
     border-radius: 30px;
+    padding: 20px;
 }
 
 .item1,
 .item3 {
     aspect-ratio: 1/1;
+}
+
+.item1>img {
+    width: 40%;
+}
+
+.item1>div {
+    font-size: 4vw;
+    font-weight: 300;
+}
+
+#name {
+    font-size: 7vw;
+    font-weight: 800;
 }
 
 .item2 {
