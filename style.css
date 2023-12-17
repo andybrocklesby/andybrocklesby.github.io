@@ -138,6 +138,16 @@ header {
     box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
 }
 
+.item4 {
+    height: fit-content;
+    aspect-ratio: 1/1.8;
+    background-image: url('./images/spotify-wrapped-2023.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: saturate(.8);
+}
+
 #item1-pre-name {
     font-size: 1em;
     font-weight: 300;
