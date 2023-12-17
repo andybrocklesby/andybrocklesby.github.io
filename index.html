@@ -13,7 +13,7 @@
     <!------------------------------HEADER-------------------------------------->
     <!------------------------------HEADER-------------------------------------->
     <header>
-        <img src="./images/memoji-1.png" alt="andy's memoji" id="logo">
+        <img src="./images/memoji-1.png" alt="andy's memoji" id="logo" onclick="goHome()">
         <div id="resume-btn">Resume</div>
     </header>
     <!-------------------------------HERO--------------------------------------->
@@ -32,9 +32,18 @@
             <div class="mobile-item item2">
                 <img src="./images/map-memoji.png" alt="" id="map-image">
             </div>
-            <div class="mobile-item item3"></div>
+            <div class="mobile-item item3">
+                <div id="item3-left"></div>
+                <div id="item3-right"></div>
+            </div>
         </div>
     </section>
 </body>
+
+<script>
+    function goHome() {
+        window.location.href = 'index.html';
+    }
+</script>
 
 </html>
