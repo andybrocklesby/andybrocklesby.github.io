@@ -77,48 +77,32 @@ header {
 /*------------------------------HERO---------------------------------*/
 /*------------------------------HERO---------------------------------*/
 
-#hero {
+#mobile-hero {
     width: 100%;
     height: fit-content;
+    padding: 50px 0;
 }
 
-#hero-flex {
-    width: 100%;
+#mobile-hero-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    gap: 20px;
 }
 
-#hero-container {
-    width: 100%;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    place-items: center;
-}
-
-.grid-item {
-    width: 100%;
-    border-radius: 20px;
+.mobile-item {
+    margin: auto;
+    width: 80%;
     border: 1px solid black;
-    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
-    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
-    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 30px;
 }
 
-.item1 {
-    grid-column: span 1;
-    grid-row: span 1;
+.item1,
+.item3 {
+    aspect-ratio: 1/1;
 }
 
-
-@media (width < 300px) {
-    .grid-item {
-        width: 200px;
-    }
-
-    .item1 {
-        height: 200px;
-    }
+.item2 {
+    aspect-ratio: 2/1;
 }
