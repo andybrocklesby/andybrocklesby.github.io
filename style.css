@@ -94,9 +94,13 @@ header {
 .mobile-item {
     margin: auto;
     width: 80%;
-    border: 1px solid black;
     border-radius: 30px;
     padding: 20px;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
 }
 
 .item1,
@@ -104,20 +108,66 @@ header {
     aspect-ratio: 1/1;
 }
 
+#item1-pre-name {
+    font-size: 1em;
+    font-weight: 300;
+}
+
 .item1>img {
     width: 40%;
 }
 
-.item1>div {
-    font-size: 4vw;
-    font-weight: 300;
+#item1-pre-name {
+    font-size: 3vw;
+    font-weight: 200;
 }
 
 #name {
     font-size: 7vw;
     font-weight: 800;
+    background: #DE0000;
+    background: linear-gradient(to right, #DE0000 0%, #0022FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#item1-text {
+    font-size: 3vw;
+    font-weight: 200;
+    padding: 30px 0;
+}
+
+#item1-text-highlight {
+    font-weight: 800;
+    background: #DE0000;
+    background: linear-gradient(to right, #DE0000 0%, #0022FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#contact-btn {
+    width: fit-content;
+    font-size: 3vw;
+    font-weight: 200;
+    background-color: rgb(245, 245, 245);
+    padding: 10px 15px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    background: #de0000;
+    background: linear-gradient(to right, #de000044 0%, #0022ff41 100%);
 }
 
 .item2 {
+    display: grid;
+    place-items: center;
     aspect-ratio: 2/1;
+    background-image: url('./images/map.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.item2>img {
+    width: 10%;
 }
