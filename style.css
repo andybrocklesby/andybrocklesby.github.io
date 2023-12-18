@@ -103,83 +103,6 @@ header {
     aspect-ratio: 1/1;
 }
 
-.item3 {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    box-shadow: none;
-}
-
-.item5 {
-    aspect-ratio: 2/1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#item5-title {
-    font-size: 4vw;
-}
-
-#tools {
-    width: 100%;
-}
-
-#item3-left {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
-    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
-    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
-    background-image: url('./images/portrait.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-#item3-right {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
-    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
-    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#uofa-logo {
-    width: 80%;
-}
-
-#certificate-title {
-    width: 100%;
-    font-size: 2vw;
-    font-weight: 500;
-    text-align: center;
-}
-
-#certificate-year {
-    font-size: 3vw;
-    padding-top: 1em;
-}
-
-.item4 {
-    height: fit-content;
-    aspect-ratio: 1/1.8;
-    background-image: url('./images/spotify-wrapped-2023.JPG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: saturate(.8);
-}
-
 #item1-pre-name {
     font-size: 1em;
     font-weight: 300;
@@ -242,4 +165,222 @@ header {
 
 .item2>img {
     width: 10%;
+}
+
+.item3 {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: none;
+}
+
+#item3-left {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    background-image: url('./images/portrait.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#item3-right {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#uofa-logo {
+    width: 80%;
+}
+
+#certificate-title {
+    width: 100%;
+    font-size: 2vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+#certificate-year {
+    font-size: 3vw;
+    padding-top: 1em;
+}
+
+.item4 {
+    height: fit-content;
+    aspect-ratio: 1/1.8;
+    background-image: url('./images/spotify-wrapped-2023.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: saturate(.8);
+}
+
+.item5 {
+    aspect-ratio: 2/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#item5-title {
+    font-size: 4vw;
+}
+
+#tools {
+    width: 100%;
+}
+
+/*----------------------------------------XL MOBILE-----------------------------------------*/
+/*----------------------------------------XL MOBILE-----------------------------------------*/
+/*----------------------------------------XL MOBILE-----------------------------------------*/
+/*----------------------------------------XL MOBILE-----------------------------------------*/
+
+#mobile-hero-xl {
+    width: 100%;
+    display: none;
+}
+
+#mobile-hero-container-xl {
+    max-width: 1200px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeate(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.xl-mobile-item {
+    border-radius: 30px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.xl-item1 {
+    width: 100%;
+    grid-column: span 2;
+    grid-row: span 2;
+    aspect-ratio: 1/1;
+}
+
+#item1-pre-name {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.xl-item1>img {
+    width: 40%;
+}
+
+#xl-item1-pre-name {
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+#xl-name {
+    font-size: 5vw;
+    font-weight: 800;
+    background: #DE0000;
+    background: linear-gradient(to right, #ffb9b9 0%, #0022ff6c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#xl-item1-text {
+    font-size: 2vw;
+    font-weight: 200;
+    padding: 1em 0;
+}
+
+#xl-item1-text-highlight {
+    font-weight: 800;
+    background: #DE0000;
+    background: linear-gradient(to right, #ffbdbd 0%, #0022ff6c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#xl-contact-btn {
+    width: fit-content;
+    font-size: 2vw;
+    font-weight: 200;
+    background-color: rgb(245, 245, 245);
+    padding: 10px 15px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    background: #de0000;
+    background: linear-gradient(to right, #de000044 0%, #0022ff41 100%);
+}
+
+.xl-item2 {
+    width: 100%;
+    grid-row: span 2;
+    aspect-ratio: 1/2.1;
+    background-image: url('./images/spotify-wrapped-2023.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -5px;
+    filter: saturate(.8);
+}
+
+.xl-item3 {
+    width: 100%;
+    aspect-ratio: 1/1;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    background-image: url('./images/portrait.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.xl-item4 {
+    width: 100%;
+    grid-column: span 2;
+    background-image: url('./images/map.png');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+#xl-map-image {
+    width: 5vw;
+}
+
+.xl-item5 {
+    width: 100%;
+    grid-column: span 3;
+    aspect-ratio: 2/1;
+}
+
+@media (width > 600px) {
+    #mobile-hero {
+        display: none;
+    }
+
+    #mobile-hero-xl {
+        display: block;
+    }
 }
