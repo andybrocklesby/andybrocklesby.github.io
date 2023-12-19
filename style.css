@@ -140,7 +140,27 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
+#btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #contact-btn {
+    width: fit-content;
+    font-size: 3vw;
+    font-weight: 200;
+    background-color: rgb(245, 245, 245);
+    padding: 10px 15px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    background: #de0000;
+    background: linear-gradient(to right, #de000044 0%, #0022ff41 100%);
+}
+
+#socials-btn {
     width: fit-content;
     font-size: 3vw;
     font-weight: 200;
@@ -174,6 +194,7 @@ header {
     justify-content: space-between;
     gap: 20px;
     box-shadow: none;
+    background-color: rgb(242, 242, 242);
 }
 
 #item3-left {
@@ -200,6 +221,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 #uofa-logo {
@@ -238,10 +260,31 @@ header {
 
 #item5-title {
     font-size: 4vw;
+    font-weight: 800;
 }
 
 #tools {
     width: 100%;
+}
+
+#contact-card {
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    position: fixed;
+    bottom: -800px;
+    left: 10%;
+    background-image: url(./images/iphone.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 50px;
+    transition: .5s ease-in-out;
+}
+
+#close-card {
+    padding: 10px;
+    background-color: white;
 }
 
 /*----------------------------------------XL MOBILE-----------------------------------------*/
@@ -255,7 +298,8 @@ header {
 }
 
 #mobile-hero-container-xl {
-    max-width: 1200px;
+    max-width: 1000px;
+    margin: auto;
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -371,8 +415,23 @@ header {
 
 .xl-item5 {
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     grid-column: span 3;
-    aspect-ratio: 2/1;
+    aspect-ratio: 2/.2;
+}
+
+#xl-item5-title {
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+#xl-tools {
+    width: 500px;
+    height: 200px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
 
 @media (width > 600px) {

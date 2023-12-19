@@ -27,7 +27,7 @@
                 <div id="item1-text">I am a front-end web / software developer with <span id="item1-text-highlight">1.5
                         years</span> of experience! Making ideas a reality since 2022. 💻
                 </div>
-                <div id="contact-btn">Contact 📱</div>
+                <div id="contact-btn" onclick="toggleContact()">Contact 📱</div>
             </div>
             <div class="mobile-item item2">
                 <img src="./images/map-memoji.png" alt="" id="map-image">
@@ -45,6 +45,9 @@
                 <div id="item5-title">Developer Toolbox</div>
                 <img src="./images/tools.png" alt="" id="tools">
             </div>
+        </div>
+        <div id="contact-card">
+            <button onclick="toggleContact()" id="close-card">x</button>
         </div>
     </section>
     <section id="mobile-hero-xl">
@@ -64,7 +67,10 @@
             <div class="xl-mobile-item xl-item4">
                 <img src="./images/map-memoji.png" alt="" id="xl-map-image">
             </div>
-            <div class="xl-mobile-item xl-item5"></div>
+            <div class="xl-mobile-item xl-item5">
+                <div id="xl-item5-title">Developer Toolbox</div>
+                <img src="./images/tools.png" alt="" id="xl-tools">
+            </div>
         </div>
     </section>
 </body>
@@ -73,6 +79,18 @@
     function goHome() {
         window.location.href = 'index.html';
     }
+
+    function toggleContact() {
+        let contactCard = document.getElementById('contact-card');
+
+        if (contactCard.style.bottom === "-100px") {
+            contactCard.style.bottom = "-800px";
+        }
+        else {
+            contactCard.style.bottom = "-100px";
+        }
+    }
+
 </script>
 
 </html>
