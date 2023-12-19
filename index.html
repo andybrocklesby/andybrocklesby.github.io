@@ -55,7 +55,7 @@
         <div id="contact-card-container">
             <div id="contact-card">
                 <button onclick="toggleContact()" id="close-card">x</button>
-                <div id="contact-title">Contact</div>
+                <div id="contact-title">Contact👇</div>
                 <div id="contact-icons">
                     <img id="email-icon" src="./images/mail-icon.png" alt="" onclick="sendEmail()">
                     <img id="phone" src="./images/phone-icon.webp" alt="" onclick="callPhone()">
@@ -116,6 +116,12 @@
         </div>
         <div id="laptop-phone">
             <button id="laptop-phone-close" onclick="toggleContactLaptop()">X</button>
+            <div id="laptop-contact-title">Contact👇</div>
+            <div id="contact-icons">
+                <img id="email-icon" src="./images/mail-icon.png" alt="" onclick="sendEmail()">
+                <img id="phone" src="./images/phone-icon.webp" alt="" onclick="callPhone()">
+                <img id="linkedin" src="./images/linkedin-icon.webp" alt="" onclick="openLinkedin()">
+            </div>
         </div>
     </section>
 </body>
@@ -146,16 +152,20 @@
         }
     }
 
+    let isContactCardVisible = true;
+
     function toggleContact() {
         let contactCard = document.getElementById('contact-card');
 
-        if (contactCard.style.transform === 'translate(-50%, 100%)') {
+        if (isContactCardVisible) {
             contactCard.style.transform = 'translate(-50%, -50%)';
-        }
-        else {
+        } else {
             contactCard.style.transform = 'translate(-50%, 100%)';
         }
+
+        isContactCardVisible = !isContactCardVisible;
     }
+
     function toggleContactLaptop() {
         let laptopPhone = document.getElementById('laptop-phone');
 
