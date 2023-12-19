@@ -9,13 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="message()">
     <!------------------------------HEADER-------------------------------------->
     <!------------------------------HEADER-------------------------------------->
     <header>
         <img src="./images/memoji-1.png" alt="andy's memoji" id="logo" onclick="goHome()">
         <div id="resume-btn">Resume</div>
     </header>
+
+    <div id="message">
+        <img src="./images/message-icon.png" alt="">
+        <div id="message-text">Thank you for showing interest in my work! Feel free to hit me up for some development
+            work.📱</div>
+    </div>
     <!-------------------------------HERO--------------------------------------->
     <!-------------------------------HERO--------------------------------------->
     <section id="mobile-hero">
@@ -81,6 +87,37 @@
             </div>
         </div>
     </section>
+    <section id="hero-laptop">
+        <div id="hero-laptop-container">
+            <div class="laptop-item laptop-item1">
+                <img src="./images/memoji-2.png" alt="andy's memoji icon">
+                <div id="laptop-item1-pre-name">Hi! My name is</div>
+                <div id="laptop-name">Andy Brocklesby</div>
+                <div id="laptop-item1-text">I am a front-end web / software developer with <span
+                        id="item1-text-highlight">1.5
+                        years</span> of experience! Making ideas a reality since 2022. 💻
+                </div>
+                <div id="laptop-contact-btn" onclick="toggleContactLaptop()">Contact 📱</div>
+            </div>
+            <div class="laptop-item laptop-item2">
+                <img src="./images/map-memoji.png" alt="" id="laptop-map-memoji">
+            </div>
+            <div class="laptop-item laptop-item3"></div>
+            <div class="laptop-item laptop-item4"></div>
+            <div class="laptop-item laptop-item5">
+                <img src="./images/uofa-logo.png" alt="" id="uofa-logo">
+                <div id="laptop-certificate-title">Front-End Web Developement Certificate</div>
+                <div id="laptop-certificate-year">March 2023</div>
+            </div>
+            <div class="laptop-item laptop-item6">
+                <div id="laptop-item6-title">Developer Toolbox</div>
+                <img src="./images/tools.png" alt="" id="xl-tools">
+            </div>
+        </div>
+        <div id="laptop-phone">
+            <button id="laptop-phone-close" onclick="toggleContactLaptop()">X</button>
+        </div>
+    </section>
 </body>
 
 <script>
@@ -88,14 +125,45 @@
         window.location.href = 'index.html';
     }
 
+    function message() {
+        let myMessage = document.getElementById('message');
+
+        // Get the computed style of the element
+        let computedStyle = window.getComputedStyle(myMessage);
+
+        // Check if the transform property includes the desired translation
+        if (computedStyle.transform.includes('matrix')) {
+            setTimeout(function () {
+                // Update the transform property after 5 seconds
+                myMessage.style.top = '50%';
+                setTimeout(function () {
+                    // Update the transform property after 5 seconds
+                    myMessage.style.top = '20%';
+                }, 8000);
+            }, 5000);
+        } else {
+            alert("Help");
+        }
+    }
+
     function toggleContact() {
         let contactCard = document.getElementById('contact-card');
 
-        if (contactCard.style.transform === 'translate(-50%, -50%)') {
-            contactCard.style.transform = 'translate(-50%, 100%)';
+        if (contactCard.style.transform === 'translate(-50%, 100%)') {
+            contactCard.style.transform = 'translate(-50%, -50%)';
         }
         else {
-            contactCard.style.transform = 'translate(-50%, -50%)';
+            contactCard.style.transform = 'translate(-50%, 100%)';
+        }
+    }
+    function toggleContactLaptop() {
+        let laptopPhone = document.getElementById('laptop-phone');
+
+        if (laptopPhone.style.transform === 'translate(-50%, 50%)') {
+            laptopPhone.style.transform = 'translate(-1000%, 50%)';
+        }
+        else {
+            laptopPhone.style.transform = 'translate(-50%, 50%)';
         }
     }
 

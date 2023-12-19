@@ -17,12 +17,42 @@ body {
 
 header {
     width: 80%;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
 }
+
+#message {
+    position: fixed;
+    max-width: 500px;
+    min-width: 280px;
+    width: 50%;
+    height: 10%;
+    top: 20%;
+    left: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 30px;
+    transition: .5s ease-in-out;
+    transform: translate(-50%, -450%);
+    z-index: 100;
+}
+
+#message>img {
+    width: 70px;
+}
+
+#message-text {
+    font-size: 12px;
+}
+
 
 #logo {
     width: 125px;
@@ -275,7 +305,7 @@ header {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 100%);
     background-image: url(./images/iphone.png);
     background-position: center;
     background-size: contain;
@@ -286,8 +316,11 @@ header {
 
 #close-card {
     padding: 10px 15px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    color: black;
     border: none;
     border-radius: 50%;
     margin-bottom: 20px;
@@ -318,8 +351,6 @@ header {
     aspect-ratio: 1/1;
     object-fit: contain;
 }
-
-
 
 @media (width > 500px) {
     #contact-card {
@@ -505,5 +536,196 @@ header {
 
     #mobile-hero-xl {
         display: block;
+    }
+}
+
+@media (width > 1000px) {
+    #mobile-hero-xl {
+        display: none;
+    }
+}
+
+@media (width < 1000px) {
+    #hero-laptop {
+        display: none;
+    }
+}
+
+/*---------------------------------------HERO LAPTOP-----------------------------------------*/
+/*---------------------------------------HERO LAPTOP-----------------------------------------*/
+/*---------------------------------------HERO LAPTOP-----------------------------------------*/
+/*---------------------------------------HERO LAPTOP-----------------------------------------*/
+
+#hero-laptop {
+    width: 100%;
+    height: fit-content;
+    margin: 50px 0;
+    padding: 0 50px;
+}
+
+#hero-laptop-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.laptop-item {
+    width: 100%;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    background-color: white;
+}
+
+.laptop-item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 20px;
+}
+
+.laptop-item1>img {
+    width: 40%;
+}
+
+#laptop-item1-pre-name {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#laptop-name {
+    font-size: 40px;
+    font-weight: 800;
+    background: #DE0000;
+    background: linear-gradient(to right, #ffb9b9 0%, #0022ff6c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#laptop-item1-text {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+#laptop-contact-btn {
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 200;
+    background-color: rgb(245, 245, 245);
+    padding: 10px 15px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.18);
+    background: #de0000;
+    background: linear-gradient(to right, #de000044 0%, #0022ff41 100%);
+    cursor: pointer;
+}
+
+.laptop-item2 {
+    grid-column: span 2;
+    background-image: url('./images/map.png');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+#laptop-map-memoji {
+    width: 50px;
+}
+
+.laptop-item3 {
+    background-image: url('./images/portrait.jpg');
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 1/1;
+}
+
+.laptop-item4 {
+    grid-row: span 2;
+    background-image: url('./images/spotify-wrapped-2023.JPG');
+    background-position: center;
+    background-size: contain;
+}
+
+.laptop-item5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+}
+
+#laptop-certificate-title {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+#laptop-certificate-year {
+    font-size: 30px;
+    font-weight: 800;
+    background: #DE0000;
+    background: linear-gradient(to right, #ffb9b9 0%, #0022ff6c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.laptop-item6 {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#laptop-item6-title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#laptop-phone {
+    width: 400px;
+    height: 800px;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-1000%, 50%);
+    background-image: url('./images/iphone.png');
+    background-position: center;
+    background-size: cover;
+    transition: .5s ease-in-out;
+    padding: 50px;
+}
+
+#laptop-phone-close {
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+@media (width > 1200px) {
+    #laptop-item1-pre-name {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    #laptop-name {
+        font-size: 60px;
+        font-weight: 800;
+    }
+
+    #laptop-item1-text {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    #laptop-contact-btn {
+        font-size: 20px;
+        font-weight: 100;
     }
 }
