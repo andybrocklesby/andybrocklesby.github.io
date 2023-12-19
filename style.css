@@ -46,7 +46,13 @@ header {
 }
 
 #message>img {
-    width: 70px;
+    width: 50px;
+}
+
+@media (width < 500px) {
+    #message>img {
+        width: 10vw;
+    }
 }
 
 #message-text {
