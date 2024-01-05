@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/hero-bg.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 8vw;
+    min-height: 100px;
+    max-height: 150px;
+    padding-top: 20px;
+}
+
+.header-container {
+    width: 80%;
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1fr 3fr 1fr;
+}
+
+.header-left,
+.header-middle,
+.header-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    z-index: 1;
+}
+
+.header-middle {
+    flex: 2;
+}
+
+.header-logo {
+    height: 100%;
+}
+
+.nav-items>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5vw;
+}
+
+.nav-item:hover {
+    color: rgb(178, 0, 0);
+}
+
+.header-btn {
+    padding: 1.5vw 2vw;
+    color: white;
+    background-color: orange;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 1vw;
+    font-weight: 800;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.header-btn:hover {
+    transform: translateY(3px);
+}
+
+@media (width > 1400px) {
+    .header-btn {
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+
+    .nav-item {
+        font-size: 20px;
+    }
+}
+
+@media (width < 800px) {
+
+    .header-container {
+        width: 100%;
+    }
+
+    .header-btn {
+        padding: 15px 20px;
+        font-size: 8px;
+    }
+
+    .header-left {
+        flex: 3;
+    }
+
+    .header-middle {
+        flex: 1;
+    }
+
+    .header-right {
+        flex: 2;
+    }
+}
+
+@media (width < 700px) {
+    .header-middle {
+        display: none;
+    }
+
+    .header-left,
+    .header-right {
+        flex: 1;
+    }
+}
+
+@media (width < 350px) {
+    .header-btn {
+        padding: 10px 5px;
+    }
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7035189075630253) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7035189075630253) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7035189075630253) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+    z-index: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fade-up 2s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.main-text-1,
+.main-text-2 {
+    color: orange;
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    transition: all .3s ease-in-out;
+}
+
+.main-text-1 {
+    transform: translate(-150px, 20px);
+}
+
+.main-text-2 {
+    font-size: 100px;
+}
+
+.main-menu-btn {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50vw - 36px);
+    color: rgba(255, 255, 255, 0.447);
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    animation: fade-up 3s ease-in-out;
+}
+
+.main-menu-btn>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.49);
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (width < 1000px) {
+    .main-text-1 {
+        font-size: 40px;
+    }
+
+    .main-text-2 {
+        font-size: 80px;
+    }
+}
+
+@media (width < 750px) {
+    .main-text-1 {
+        font-size: 30px;
+        transform: translate(-100px, 10px);
+    }
+
+    .main-text-2 {
+        font-size: 50px;
+    }
+}
+
+@media (width < 500px) {
+    .main-text-1 {
+        font-size: 20px;
+        transform: translate(-30px, 5px);
+    }
+
+    .main-text-2 {
+        font-size: 30px;
+    }
+}
+
+@media (height < 600px) {
+    .main-text-1 {
+        font-size: 30px;
+        transform: translate(-70px, 10px);
+    }
+
+    .main-text-2 {
+        font-size: 50px;
+    }
+}
+
+/*----------------------------------SECTION 2--------------------------------------*/
+
+.section-2 {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    background-color: red;
+    background: rgb(0, 0, 0);
+    background: -moz-radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7035189075630253) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7035189075630253) 100%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7035189075630253) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+    position: relative;
+}
+
+.menu {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    padding: 200px 0;
+}
+
+.menu-container {
+    max-width: 1400px;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    min-width: 260px;
+}
+
+.food-item {
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+
+.grid-title {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.item-varient {
+    font-weight: 600;
+    color: rgb(210, 0, 0);
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.item-description {
+    font-size: 12px;
+    padding: 10px 0 0 0;
+}
+
+.item-price {
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+#price-highlight {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: orange;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.menu-info-panel {
+    position: absolute;
+    bottom: 225px;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.246);
+    padding: 20px;
+}
+
+.pizza-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-info-title {
+    text-align: center;
+}
+
+.pizza-style {
+    font-weight: 800;
+    color: rgb(210, 0, 0);
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.divider {
+    color: black;
+}
+
+.toppings-container {
+
+    height: 300px;
+    padding: 20px 0;
+}
+
+.toppings-columns {
+    height: 200px;
+    display: flex;
+}
+
+.toppings-left,
+.toppings-right {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+@media (width < 1100px) {
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .grid-item-1 {
+        grid-row: span 2;
+    }
+
+    .menu-info-panel {
+        bottom: 100px;
+        left: 5vw;
+    }
+}
+
+@media (width < 850px) {
+    .menu-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    .grid-item-1 {
+        grid-row: span 1;
+    }
+
+    .menu-info-panel {
+        display: none;
+    }
+}
+
+@media (width < 500px) {
+    .menu {
+        padding: 50px 0;
+    }
+}
+
+/*----------------------------------FOOTER--------------------------------------*/
+
+.section-3 {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+}
+
+.footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-1 {
+    color: orange;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    transition: all .3s ease-in-out;
+}
+
+.footer-2 {
+    color: orange;
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    transition: all .3s ease-in-out;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.copyright {
+    color: white;
+    margin-top: 20px;
+}
+
+@media (width < 800px) {
+    .footer-2 {
+        font-size: 50px;
+    }
+}

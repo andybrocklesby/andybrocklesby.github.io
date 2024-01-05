@@ -5,190 +5,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Brocklesby | Portfolio</title>
+    <title>Andy Brocklesby | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="message()">
-    <!------------------------------HEADER-------------------------------------->
-    <!------------------------------HEADER-------------------------------------->
-    <header>
-        <img src="./images/memoji-1.png" alt="andy's memoji" id="logo" onclick="goHome()">
-        <div id="resume-btn">Resume</div>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <nav class="nav-items">
+                    <div class="nav-item">About</div>
+                    <div class="nav-item">Projects</div>
+                    <div class="nav-item">Blog</div>
+                    <div class="nav-item">Contact</div>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div id="resume-btn">Resume</div>
+            </div>
+        </div>
     </header>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="pre-name"><span class="hand">👋</span> Hi. My name is</div>
+                <div class="hero-title">Andy Brocklesby</div>
+                <div class="hero-text">I am a front-end engineer with <span id="highlight">1.5 years</span> of
+                    experience.</div>
+                <div class="greeting-section">
+                    <div class="hero-pre-transition">I am also...</div>
+                    <div id="greeting-container">Hello</div>
+                </div>
+                <div class="socials">
+                    <img src="./images/github-logo.png" alt="" class="social-item">
+                    <img src="./images/linkedin-logo.png" alt="" class="social-item">
+                    <img src="./images/mail-logo.png" alt="" class="social-item">
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="./images/IMG_EAD5E1FEB382-1.png" alt="" class="portrait">
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <div class="skills-container">
+            <div class="skills-title">Toolkit</div>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <img src="./images/html-logo.webp" alt="" class="skill-logo">
+                    <div class="skill-name">HTML</div>
+                </div>
+                <div class="skill-item">
+                    <img src="./images/css-logo.webp" alt="" class="skill-logo">
+                    <div class="skill-name">CSS</div>
+                </div>
+                <div class="skill-item">
+                    <img src="./images/javascript-logo.png" alt="" class="skill-logo">
+                    <div class="skill-name">Javascript</div>
+                </div>
+                <div class="skill-item">
+                    <img src="./images/bootstrap-logo.png" alt="" class="skill-logo">
+                    <div class="skill-name">Bootstrap</div>
+                </div>
+                <div class="skill-item">
+                    <img src="./images/react-logo.png" alt="" class="skill-logo">
+                    <div class="skill-name">React</div>
+                </div>
+                <div class="skill-item">
+                    <img src="./images/github-logo.png" alt="" class="skill-logo">
+                    <div class="skill-name">GitHub</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="learning">
+        <div class="learning-container">
+            <div class="learning-title">Developing skills in...</div>
+            <div class="learning-skills">
+                <div class="learning-skill">HTML</div>
+                <div class="learning-skill">CSS</div>
+                <div class="learning-skill">Javascript</div>
+                <div class="learning-skill">Bootstrap</div>
+                <div class="learning-skill">React</div>
+                <div class="learning-skill">GitHub</div>
+                <div class="learning-skill">Typescript</div>
+                <div class="learning-skill">Tailwind CSS</div>
+                <div class="learning-skill">Node.js</div>
+                <div class="learning-skill">Gatsby</div>
+                <div class="learning-skill">Next.js</div>
+                <div class="learning-skill">MongoDB</div>
+                <div class="learning-skill">Web3</div>
+                <div class="learning-skill">Spline</div>
+            </div>
+        </div>
+    </section>
+    <section class="index-about">
+        <div class="index-about-container">
+            <div class="index-about-left">
+                <img src="./images/portfolio-image.jpeg" alt="" class="index-about-image">
+            </div>
+            <div class="index-about-right">
+                <div class="index-about-title">About</div>
+                <div class="index-about-text">My passion for computers has been a constant in my life. From my high
+                    school days, I was keen on delving into the realm of IT, harboring a clear aspiration for a career
+                    in this field. It took me 15 years to pinpoint my specific interest within the vast landscape of
+                    technology. Following the completion of my degree in game development, I discovered a profound
+                    fondness for coding 💻🎓. This revelation led me to focus on software engineering, and my ultimate
+                    aim is
+                    to evolve into a proficient full-stack engineer. 🛠</div>
+                <div class="index-about-more">Read More</div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="projects-container">
+            <div class="projects-title">Projects</div>
+            <div class="project-card">
+                <div class="project-left">
+                    <div class="project-preference">Personal Project</div>
+                    <div class="project-card-title">That Little Pizza Place - Site Redesign</div>
+                    <div class="project-card-skills">
+                        <div class="project-card-skill">HTML</div>
+                        <div class="project-card-skill">CSS</div>
+                        <div class="project-card-skill">Javascript</div>
+                    </div>
+                    <div class="project-card-view-btn" onclick="goToRedesign()">View Project</div>
+                    <div class="project-card-description">I undertook a project to revamp the website of a local
+                        restaurant situated in Fayetteville, Northwest Arkansas, employing HTML, CSS, and Javascript.
+                        The primary objective was to enhance the site's appearance by infusing a modernized design. As
+                        part of my contribution, I provided the restaurant with the updated source code completely free
+                        of charge.
+                    </div>
+                </div>
+                <div class="project-right">
+                    <img src="./site_redesign/images/hero-bg.avif" alt="" class="project-image">
+                </div>
+            </div>
+            <div class="project-card-inverse">
+                <div class="project-left-inverse">
+                    <div class="project-preference">Personal Project</div>
+                    <div class="project-card-title">Hugos - Site Redesign</div>
+                    <div class="project-card-skills">
+                        <div class="project-card-skill">HTML</div>
+                        <div class="project-card-skill">CSS</div>
+                        <div class="project-card-skill">Javascript</div>
+                    </div>
+                    <div class="project-card-view-btn">View Project</div>
+                    <div class="project-card-description">I undertook a project to revamp the website of a local
+                        restaurant situated in Fayetteville, Northwest Arkansas, employing HTML, CSS, and Javascript.
+                        The primary objective was to enhance the site's appearance by infusing a modernized design. As
+                        part of my contribution, I provided the restaurant with the updated source code completely free
+                        of charge.
+                    </div>
+                </div>
+                <div class="project-right">
+                    <img src="https://hugosfayetteville.com/wp-content/uploads/2020/01/hugos-outside-1-863x1024.jpg"
+                        alt="" class="project-image">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div id="message">
-        <img src="./images/message-icon.png" alt="">
-        <div id="message-text">Thank you for showing interest in my work! Feel free to hit me up for some development
-            work.📱</div>
-    </div>
-    <!-------------------------------HERO--------------------------------------->
-    <!-------------------------------HERO--------------------------------------->
-    <section id="mobile-hero">
-        <div id="mobile-hero-container">
-            <div class="mobile-item item1">
-                <img src="./images/memoji-2.png" alt="andy's memoji icon">
-                <div id="item1-pre-name">Hi! My name is</div>
-                <div id="name">Andy Brocklesby</div>
-                <div id="item1-text">I am a front-end web / software developer with <span id="item1-text-highlight">1.5
-                        years</span> of experience! Making ideas a reality since 2022. 💻
-                </div>
-                <div id="contact-btn" onclick="toggleContact()">Contact 📱</div>
-            </div>
-            <div class="mobile-item item2">
-                <img src="./images/map-memoji.png" alt="" id="map-image">
-            </div>
-            <div class="mobile-item item3">
-                <div id="item3-left"></div>
-                <div id="item3-right">
-                    <img src="./images/uofa-logo.png" alt="" id="uofa-logo">
-                    <div id="certificate-title">Front-End Web Developement Certificate</div>
-                    <div id="certificate-year">March 2023</div>
-                </div>
-            </div>
-            <div class="mobile-item item4"></div>
-            <div class="mobile-item item5">
-                <div id="item5-title">Developer Toolbox</div>
-                <img src="./images/tools.png" alt="" id="tools">
-            </div>
-        </div>
-        <div id="contact-card-container">
-            <div id="contact-card">
-                <button onclick="toggleContact()" id="close-card">x</button>
-                <div id="contact-title">Contact👇</div>
-                <div id="contact-icons">
-                    <img id="email-icon" src="./images/mail-icon.png" alt="" onclick="sendEmail()">
-                    <img id="phone" src="./images/phone-icon.webp" alt="" onclick="callPhone()">
-                    <img id="linkedin" src="./images/linkedin-icon.webp" alt="" onclick="openLinkedin()">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="mobile-hero-xl">
-        <div id="mobile-hero-container-xl">
-            <div class="xl-mobile-item xl-item1">
-                <img src="./images/memoji-2.png" alt="andy's memoji icon">
-                <div id="xl-item1-pre-name">Hi! My name is</div>
-                <div id="xl-name">Andy Brocklesby</div>
-                <div id="xl-item1-text">I am a front-end web / software developer with <span
-                        id="item1-text-highlight">1.5
-                        years</span> of experience! Making ideas a reality since 2022. 💻
-                </div>
-                <div id="xl-contact-btn">Contact 📱</div>
-            </div>
-            <div class="xl-mobile-item xl-item2"></div>
-            <div class="xl-mobile-item xl-item3"></div>
-            <div class="xl-mobile-item xl-item4">
-                <img src="./images/map-memoji.png" alt="" id="xl-map-image">
-            </div>
-            <div class="xl-mobile-item xl-item5">
-                <div id="xl-item5-title">Developer Toolbox</div>
-                <img src="./images/tools.png" alt="" id="xl-tools">
-            </div>
-        </div>
-    </section>
-    <section id="hero-laptop">
-        <div id="hero-laptop-container">
-            <div class="laptop-item laptop-item1">
-                <img src="./images/memoji-2.png" alt="andy's memoji icon">
-                <div id="laptop-item1-pre-name">Hi! My name is</div>
-                <div id="laptop-name">Andy Brocklesby</div>
-                <div id="laptop-item1-text">I am a front-end web / software developer with <span
-                        id="item1-text-highlight">1.5
-                        years</span> of experience! Making ideas a reality since 2022. 💻
-                </div>
-                <div id="laptop-contact-btn" onclick="toggleContactLaptop()">Contact 📱</div>
-            </div>
-            <div class="laptop-item laptop-item2">
-                <img src="./images/map-memoji.png" alt="" id="laptop-map-memoji">
-            </div>
-            <div class="laptop-item laptop-item3"></div>
-            <div class="laptop-item laptop-item4"></div>
-            <div class="laptop-item laptop-item5">
-                <img src="./images/uofa-logo.png" alt="" id="uofa-logo">
-                <div id="laptop-certificate-title">Front-End Web Developement Certificate</div>
-                <div id="laptop-certificate-year">March 2023</div>
-            </div>
-            <div class="laptop-item laptop-item6">
-                <div id="laptop-item6-title">Developer Toolbox</div>
-                <img src="./images/tools.png" alt="" id="xl-tools">
-            </div>
-        </div>
-        <div id="laptop-phone">
-            <button id="laptop-phone-close" onclick="toggleContactLaptop()">X</button>
-            <div id="laptop-contact-title">Contact👇</div>
-            <div id="contact-icons">
-                <img id="email-icon" src="./images/mail-icon.png" alt="" onclick="sendEmail()">
-                <img id="phone" src="./images/phone-icon.webp" alt="" onclick="callPhone()">
-                <img id="linkedin" src="./images/linkedin-icon.webp" alt="" onclick="openLinkedin()">
-            </div>
-        </div>
-    </section>
+
+    <script src="./app.js"></script>
+    <script>
+        function goToRedesign() {
+            window.open('./site_redesign/index.html');
+        }
+    </script>
 </body>
-
-<script>
-    function goHome() {
-        window.location.href = 'index.html';
-    }
-
-    function message() {
-        let myMessage = document.getElementById('message');
-
-        // Get the computed style of the element
-        let computedStyle = window.getComputedStyle(myMessage);
-
-        // Check if the transform property includes the desired translation
-        if (computedStyle.transform.includes('matrix')) {
-            setTimeout(function () {
-                // Update the transform property after 5 seconds
-                myMessage.style.top = '50%';
-                setTimeout(function () {
-                    // Update the transform property after 5 seconds
-                    myMessage.style.top = '20%';
-                }, 8000);
-            }, 5000);
-        } else {
-            alert("Help");
-        }
-    }
-
-    let isContactCardVisible = true;
-
-    function toggleContact() {
-        let contactCard = document.getElementById('contact-card');
-
-        if (isContactCardVisible) {
-            contactCard.style.transform = 'translate(-50%, -50%)';
-        } else {
-            contactCard.style.transform = 'translate(-50%, 100%)';
-        }
-
-        isContactCardVisible = !isContactCardVisible;
-    }
-
-    function toggleContactLaptop() {
-        let laptopPhone = document.getElementById('laptop-phone');
-
-        if (laptopPhone.style.transform === 'translate(-50%, 50%)') {
-            laptopPhone.style.transform = 'translate(-1000%, 50%)';
-        }
-        else {
-            laptopPhone.style.transform = 'translate(-50%, 50%)';
-        }
-    }
-
-    function sendEmail() {
-        window.location.href = 'mailto:andybrocklesby96@gmail.com';
-    }
-
-    function callPhone() {
-        window.location.href = 'tel:5018589163';
-    }
-
-    function openLinkedin() {
-        window.open('https://www.linkedin.com/in/andrewbrocklesby/');
-    }
-
-</script>
 
 </html>
