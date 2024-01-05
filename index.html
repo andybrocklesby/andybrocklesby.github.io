@@ -7,165 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Brocklesby | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/IMG_EAD5E1FEB382-1.png" type="image/x-icon">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-container">
-            <div class="header-left">
-                <nav class="nav-items">
-                    <div class="nav-item">About</div>
-                    <div class="nav-item">Projects</div>
-                    <div class="nav-item">Blog</div>
-                    <div class="nav-item">Contact</div>
-                </nav>
-            </div>
-            <div class="header-right">
-                <div id="resume-btn">Resume</div>
-            </div>
+
+    <div class="alert">
+        <div class="alert-text">⚠️ Website Under Development ⚠️</div>
+        <img src="./images/cog.png" alt="" class="cog-1">
+        <img src="./images/cog.png" alt="" class="cog-2">
+    </div>
+
+    <header id="header">
+        <div id="header-items">
+            <nav id="nav-items">
+                <ul>
+                    <li><a href="#" class="nav-item">About</a></li>
+                    <li><a href="#" class="nav-item">Projects</a></li>
+                    <li><a href="#" class="nav-item">Blog</a></li>
+                    <li><a href="#" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+            <svg id="menu-icon" width="50px" height="50px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+                    fill="#000000" />
+            </svg>
+            <div id="header-btn">Resume</div>
         </div>
     </header>
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-left">
-                <div class="pre-name"><span class="hand">👋</span> Hi. My name is</div>
-                <div class="hero-title">Andy Brocklesby</div>
-                <div class="hero-text">I am a front-end engineer with <span id="highlight">1.5 years</span> of
-                    experience.</div>
-                <div class="greeting-section">
-                    <div class="hero-pre-transition">I am also...</div>
-                    <div id="greeting-container">Hello</div>
-                </div>
-                <div class="socials">
-                    <img src="./images/github-logo.png" alt="" class="social-item">
-                    <img src="./images/linkedin-logo.png" alt="" class="social-item">
-                    <img src="./images/mail-logo.png" alt="" class="social-item">
-                </div>
-            </div>
-            <div class="hero-right">
-                <img src="./images/IMG_EAD5E1FEB382-1.png" alt="" class="portrait">
-            </div>
-        </div>
-    </section>
-    <section class="skills">
-        <div class="skills-container">
-            <div class="skills-title">Toolkit</div>
-            <div class="skill-items">
-                <div class="skill-item">
-                    <img src="./images/html-logo.webp" alt="" class="skill-logo">
-                    <div class="skill-name">HTML</div>
-                </div>
-                <div class="skill-item">
-                    <img src="./images/css-logo.webp" alt="" class="skill-logo">
-                    <div class="skill-name">CSS</div>
-                </div>
-                <div class="skill-item">
-                    <img src="./images/javascript-logo.png" alt="" class="skill-logo">
-                    <div class="skill-name">Javascript</div>
-                </div>
-                <div class="skill-item">
-                    <img src="./images/bootstrap-logo.png" alt="" class="skill-logo">
-                    <div class="skill-name">Bootstrap</div>
-                </div>
-                <div class="skill-item">
-                    <img src="./images/react-logo.png" alt="" class="skill-logo">
-                    <div class="skill-name">React</div>
-                </div>
-                <div class="skill-item">
-                    <img src="./images/github-logo.png" alt="" class="skill-logo">
-                    <div class="skill-name">GitHub</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="learning">
-        <div class="learning-container">
-            <div class="learning-title">Developing skills in...</div>
-            <div class="learning-skills">
-                <div class="learning-skill">HTML</div>
-                <div class="learning-skill">CSS</div>
-                <div class="learning-skill">Javascript</div>
-                <div class="learning-skill">Bootstrap</div>
-                <div class="learning-skill">React</div>
-                <div class="learning-skill">GitHub</div>
-                <div class="learning-skill">Typescript</div>
-                <div class="learning-skill">Tailwind CSS</div>
-                <div class="learning-skill">Node.js</div>
-                <div class="learning-skill">Gatsby</div>
-                <div class="learning-skill">Next.js</div>
-                <div class="learning-skill">MongoDB</div>
-                <div class="learning-skill">Web3</div>
-                <div class="learning-skill">Spline</div>
-            </div>
-        </div>
-    </section>
-    <section class="index-about">
-        <div class="index-about-container">
-            <div class="index-about-left">
-                <img src="./images/portfolio-image.jpeg" alt="" class="index-about-image">
-            </div>
-            <div class="index-about-right">
-                <div class="index-about-title">About</div>
-                <div class="index-about-text">My passion for computers has been a constant in my life. From my high
-                    school days, I was keen on delving into the realm of IT, harboring a clear aspiration for a career
-                    in this field. It took me 15 years to pinpoint my specific interest within the vast landscape of
-                    technology. Following the completion of my degree in game development, I discovered a profound
-                    fondness for coding 💻🎓. This revelation led me to focus on software engineering, and my ultimate
-                    aim is
-                    to evolve into a proficient full-stack engineer. 🛠</div>
-                <div class="index-about-more">Read More</div>
-            </div>
-        </div>
-    </section>
-    <section class="projects">
-        <div class="projects-container">
-            <div class="projects-title">Projects</div>
-            <div class="project-card">
-                <div class="project-left">
-                    <div class="project-preference">Personal Project</div>
-                    <div class="project-card-title">That Little Pizza Place - Site Redesign</div>
-                    <div class="project-card-skills">
-                        <div class="project-card-skill">HTML</div>
-                        <div class="project-card-skill">CSS</div>
-                        <div class="project-card-skill">Javascript</div>
-                    </div>
-                    <div class="project-card-view-btn" onclick="goToRedesign()">View Project</div>
-                    <div class="project-card-description">I undertook a project to revamp the website of a local
-                        restaurant situated in Fayetteville, Northwest Arkansas, employing HTML, CSS, and Javascript.
-                        The primary objective was to enhance the site's appearance by infusing a modernized design. As
-                        part of my contribution, I provided the restaurant with the updated source code completely free
-                        of charge.
-                    </div>
-                </div>
-                <div class="project-right">
-                    <img src="./site_redesign/images/hero-bg.avif" alt="" class="project-image">
-                </div>
-            </div>
-            <div class="project-card-inverse">
-                <div class="project-left-inverse">
-                    <div class="project-preference">Personal Project</div>
-                    <div class="project-card-title">Hugos - Site Redesign</div>
-                    <div class="project-card-skills">
-                        <div class="project-card-skill">HTML</div>
-                        <div class="project-card-skill">CSS</div>
-                        <div class="project-card-skill">Javascript</div>
-                    </div>
-                    <div class="project-card-view-btn">View Project</div>
-                    <div class="project-card-description">I undertook a project to revamp the website of a local
-                        restaurant situated in Fayetteville, Northwest Arkansas, employing HTML, CSS, and Javascript.
-                        The primary objective was to enhance the site's appearance by infusing a modernized design. As
-                        part of my contribution, I provided the restaurant with the updated source code completely free
-                        of charge.
-                    </div>
-                </div>
-                <div class="project-right">
-                    <img src="https://hugosfayetteville.com/wp-content/uploads/2020/01/hugos-outside-1-863x1024.jpg"
-                        alt="" class="project-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <script src="./app.js"></script>
     <script>
