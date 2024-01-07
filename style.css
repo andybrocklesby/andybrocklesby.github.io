@@ -590,6 +590,7 @@
 @media (width < 700px) {
     #index-about-container {
         flex-direction: column;
+        gap: 20px;
     }
 
     #index-about-right {
