@@ -10,14 +10,11 @@
     <link rel="shortcut icon" href="./images/IMG_EAD5E1FEB382-1.png" type="image/x-icon">
 </head>
 
-<body>
+<body onload="alertUser()">
 
-    <div class="alert">
-        <div class="alert-text">⚠️ Website Under Development ⚠️</div>
-        <img src="./images/cog.png" alt="" class="cog-1">
-        <img src="./images/cog.png" alt="" class="cog-2">
-    </div>
-
+    <!---------------------------------------------HEADER----------------------------------------------->
+    <!---------------------------------------------HEADER----------------------------------------------->
+    <!---------------------------------------------HEADER----------------------------------------------->
     <header id="header">
         <div id="header-items">
             <nav id="nav-items">
@@ -28,15 +25,140 @@
                     <li><a href="#" class="nav-item">Contact</a></li>
                 </ul>
             </nav>
-            <svg id="menu-icon" width="50px" height="50px" viewBox="0 0 24 24" fill="none"
+            <svg onclick="toggleMenu()" id="menu-icon" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
                     fill="#000000" />
             </svg>
-            <div id="header-btn">Resume</div>
+            <div id="header-btn" onclick="openResume()">Resume</div>
         </div>
+
+        <!----------------------------------------MOBILE-NAV-------------------------------------------->
+        <!----------------------------------------MOBILE-NAV-------------------------------------------->
+        <!----------------------------------------MOBILE-NAV-------------------------------------------->
+
     </header>
+    <div id="mobile-menu">
+        <nav id="mobile-nav">
+            <ul>
+                <li><a href="#" class="mobile-nav-items">About</a></li>
+                <li><a href="#" class="mobile-nav-items">Projects</a></li>
+                <li><a href="#" class="mobile-nav-items">Blog</a></li>
+                <li><a href="#" class="mobile-nav-items">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--------------------------------------------HERO--------------------------------------------------->
+    <!--------------------------------------------HERO--------------------------------------------------->
+    <!--------------------------------------------HERO--------------------------------------------------->
+
+    <section id="hero">
+        <div id="hero-container">
+            <div id="hero-left">
+                <div id="pre-name-items">
+                    <div id="hand">👋</div>
+                    <div id="pre-name">Hi. My name is</div>
+                </div>
+                <div id="name">Andy Brocklesby</div>
+                <div id="hero-description">I am a software engineer with <span id="highlight">1.5 years</span> of
+                    experience.</div>
+                <div id="greeting-items">
+                    <div id="pre-greeting">I'm also</div>
+                    <div id="greeting-container"></div>
+                </div>
+                <div id="hero-social-items">
+                    <a href="#"><img src="./images/github-logo.png" alt="" class="social-item"></a>
+                    <a href="#"><img src="./images/linkedin-logo.png" alt="" class="social-item"></a>
+                    <a href="#"><img src="./images/mail-logo.png" alt="" class="social-item"></a>
+                </div>
+            </div>
+            <div id="hero-right">
+                <img src="./images/IMG_EAD5E1FEB382-1.png" alt="Andy's Apple Memoji" id="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------TOOLKIT SECTION-------------------------------------------->
+    <!--------------------------------------------TOOLKIT SECTION-------------------------------------------->
+    <!--------------------------------------------TOOLKIT SECTION-------------------------------------------->
+
+    <section id="toolkit">
+        <div id="toolkit-container">
+            <div class="title">Toolkit</div>
+            <div id="toolkit-items">
+                <div class="toolkit-item">
+                    <img src="./images/html-logo.webp" alt="html logo" class="toolkit-image">
+                    <div class="toolkit-title">HTML</div>
+                </div>
+                <div class="toolkit-item">
+                    <img src="./images/css-logo.webp" alt="css logo" class="toolkit-image">
+                    <div class="toolkit-title">CSS</div>
+                </div>
+                <div class="toolkit-item">
+                    <img src="./images/javascript-logo.png" alt="javascript logo" class="toolkit-image">
+                    <div class="toolkit-title">Javascript</div>
+                </div>
+                <div class="toolkit-item">
+                    <img src="./images/bootstrap-logo.png" alt="bootstrap logo" class="toolkit-image">
+                    <div class="toolkit-title">Bootstrap</div>
+                </div>
+                <div class="toolkit-item">
+                    <img src="./images/github-logo.png" alt="github logo" class="toolkit-image">
+                    <div class="toolkit-title">Github</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------SKILLS SECTION-------------------------------------------->
+    <!---------------------------------------------SKILLS SECTION-------------------------------------------->
+    <!---------------------------------------------SKILLS SECTION-------------------------------------------->
+
+    <section id="skills">
+        <div id="skills-container">
+            <div class="title" id="skills-title">Developing skills in...</div>
+            <div id="skill-items">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">Javascript</div>
+                <div class="skill-item">Bootstrap</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Github</div>
+                <div class="skill-item">Typescript</div>
+                <div class="skill-item">Tailwind CSS</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">Gatsby</div>
+                <div class="skill-item">Next.js</div>
+                <div class="skill-item">MongoDB</div>
+                <div class="skill-item">Web3</div>
+                <div class="skill-item">Spline</div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------INDEX ABOUT SECTION--------------------------------------->
+    <!----------------------------------------------INDEX ABOUT SECTION--------------------------------------->
+    <!----------------------------------------------INDEX ABOUT SECTION--------------------------------------->
+
+    <section id="index-about">
+        <div id="index-about-container">
+            <div id="index-about-left">
+                <img src="./images/portfolio-image.jpeg" alt="portrait of Andy" id="index-about-image">
+            </div>
+            <div id="index-about-right">
+                <div class="title">About</div>
+                <div id="index-about-text">My passion for computers has been a constant in my life. From my high school
+                    days, I was keen on delving into the realm of IT, harboring a clear aspiration for a career in this
+                    field. It took me 15 years to pinpoint my specific interest within the vast landscape of technology.
+                    Following the completion of my degree in game development, I discovered a profound fondness for
+                    coding 💻🎓. This revelation led me to focus on software engineering, and my ultimate aim is to
+                    evolve into a proficient full-stack engineer. 🛠</div>
+                <div id="index-about-btn">Read More</div>
+            </div>
+        </div>
+    </section>
 
     <script src="./app.js"></script>
     <script>

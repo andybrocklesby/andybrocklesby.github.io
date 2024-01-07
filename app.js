@@ -23,3 +23,27 @@ cycleGreetings();
 setInterval(cycleGreetings, 3000);
 
 
+
+let isShowing = true;
+
+function toggleMenu() {
+    let menuDiv = document.getElementById('mobile-menu');
+    let currentTransform = menuDiv.style.transform;
+
+    if (currentTransform === 'translateY(10vh)') {
+        menuDiv.style.transform = 'translateY(0vh)';
+    } else {
+        menuDiv.style.transform = 'translateY(10vh)';
+    }
+}
+
+function openResume() {
+    window.open('./AndyBrocklesby_Resume.pdf');
+}
+
+function alertUser() {
+    alert("Website under development. Things will be missing!");
+}
+
+
+
