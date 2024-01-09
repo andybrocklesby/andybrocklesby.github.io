@@ -637,8 +637,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    border: 1px solid black;
+    gap: 20px;
 }
 
 .project-item {
@@ -647,13 +646,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .project-left,
 .project-right {
     width: 100%;
-    border: 1px solid green;
 }
 
 .project-left {
@@ -748,5 +745,10 @@
         width: 100%;
         padding: 0;
         border-radius: 20px;
+    }
+
+    .project-skill {
+        font-size: 12px;
+        padding: 8px 15px;
     }
 }

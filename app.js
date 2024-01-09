@@ -41,9 +41,9 @@ function openResume() {
     window.open('./AndyBrocklesby_Resume.pdf');
 }
 
-// function alertUser() {
-//     alert("Website under development. Things will be missing!");
-// }
+function alertUser() {
+    alert("Website under development. Things will be missing!");
+}
 
 
 
