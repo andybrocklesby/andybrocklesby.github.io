@@ -10,7 +10,21 @@
     <link rel="shortcut icon" href="./images/IMG_EAD5E1FEB382-1.png" type="image/x-icon">
 </head>
 
-<body onload="alertUser()">
+<body onload="pageSetup()">
+
+    <!---------------------------------CONTACT CARD-------------------------------------------------->
+    <!---------------------------------CONTACT CARD-------------------------------------------------->
+    <!---------------------------------CONTACT CARD-------------------------------------------------->
+
+    <div id="contact-card">
+        <div id="contact-card-container">
+            <div class="contact-close" onclick="toggleContact()">x</div>
+            <div class="contact-greeting">👋 Hi there.</div>
+            <div class="contact-greeting">Please feel free to contact me at:</div>
+            <div class="contact-greeting">andybrocklesby96@gmail.com</div>
+            <div class="contact-greeting">(501) 858-9163</div>
+        </div>
+    </div>
 
     <!---------------------------------------------HEADER----------------------------------------------->
     <!---------------------------------------------HEADER----------------------------------------------->
@@ -22,7 +36,7 @@
                     <li><a href="#" class="nav-item">About</a></li>
                     <li><a href="#" class="nav-item">Projects</a></li>
                     <li><a href="#" class="nav-item">Blog</a></li>
-                    <li><a href="#" class="nav-item">Contact</a></li>
+                    <li><a href="#" class="nav-item" onclick="toggleContact()">Contact</a></li>
                 </ul>
             </nav>
             <svg onclick="toggleMenu()" id="menu-icon" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
@@ -45,7 +59,7 @@
                 <li><a href="#" class="mobile-nav-items">About</a></li>
                 <li><a href="#" class="mobile-nav-items">Projects</a></li>
                 <li><a href="#" class="mobile-nav-items">Blog</a></li>
-                <li><a href="#" class="mobile-nav-items">Contact</a></li>
+                <li><a href="#" class="mobile-nav-items" onclick="toggleContact()">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -201,7 +215,7 @@
                     <li><a href="#index-about" class="nav-item-footer">About</a></li>
                     <li><a href="#project" class="nav-item-footer">Projects</a></li>
                     <li><a href="#" class="nav-item-footer">Blog</a></li>
-                    <li><a href="#" class="nav-item-footer">Contact</a></li>
+                    <li><a href="#" class="nav-item-footer" onclick="toggleContact()">Contact</a></li>
                 </ul>
             </div>
             <div id="copyright">&copy Andy Brocklesby 2024. All rights reserved.</div>

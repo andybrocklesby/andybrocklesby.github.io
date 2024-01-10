@@ -1,3 +1,8 @@
+function pageSetup() {
+    let contactCard = document.getElementById('contact-card').style;
+    contactCard.display = "none";
+}
+
 
 const greetings = ['a car enthusiast 🚗', 'a technology fanatic 💻', 'a whovian 🌀', 'a productivity fanatic 🧠', 'a self-development sucker 💪'];
 const greetingLocation = document.getElementById('greeting-container');
@@ -44,6 +49,21 @@ function openResume() {
 // function alertUser() {
 //     alert("Website under development. Things will be missing!");
 // }
+
+let contactVisible = false;
+
+function toggleContact() {
+    let contactCard = document.getElementById('contact-card').style;
+
+    if (contactVisible) {
+        contactCard.display = 'none';
+        contactVisible = false;
+    }
+    else if (!contactVisible) {
+        contactCard.display = 'grid';
+        contactVisible = true;
+    }
+}
 
 
 
