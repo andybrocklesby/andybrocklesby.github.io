@@ -12,6 +12,10 @@
 
 <body onload="pageSetup()">
 
+    <section id="message">
+        <div id="message-wrapper">📱Site is under development. Some features may not work. 💻</div>
+    </section>
+
     <!---------------------------------CONTACT CARD-------------------------------------------------->
     <!---------------------------------CONTACT CARD-------------------------------------------------->
     <!---------------------------------CONTACT CARD-------------------------------------------------->
@@ -33,8 +37,8 @@
         <div id="header-items">
             <nav id="nav-items">
                 <ul>
-                    <li><a href="#" class="nav-item">About</a></li>
-                    <li><a href="#" class="nav-item">Projects</a></li>
+                    <li><a href="#index-about" class="nav-item">About</a></li>
+                    <li><a href="#project" class="nav-item">Projects</a></li>
                     <li><a href="#" class="nav-item">Blog</a></li>
                     <li><a href="#" class="nav-item" onclick="toggleContact()">Contact</a></li>
                 </ul>
@@ -83,9 +87,29 @@
                     <div id="greeting-container"></div>
                 </div>
                 <div id="hero-social-items">
-                    <a href="#"><img src="./images/github-logo.png" alt="" class="social-item"></a>
-                    <a href="#"><img src="./images/linkedin-logo.png" alt="" class="social-item"></a>
-                    <a href="#"><img src="./images/mail-logo.png" alt="" class="social-item"></a>
+                    <a 
+                        href="https://github.com/andybrocklesby"
+                        target="_blank">
+                        <img 
+                            src="./images/github-logo.png" 
+                            alt="" 
+                            class="social-item">
+                    </a>
+                    <a 
+                        href="https://www.linkedin.com/in/andybrocklesby/" 
+                        target="_blank">
+                        <img
+                            src="./images/linkedin-logo.png" 
+                            alt="LinkedIn Social Media blacked out" 
+                            class="social-item">
+                    </a>
+                    <a 
+                        href="mailto:andybrocklesby96@gmail.com" target="_blank">
+                        <img 
+                            src="./images/mail-logo.png" 
+                            alt="" 
+                            class="social-item">
+                    </a>
                 </div>
             </div>
             <div id="hero-right">
@@ -185,6 +209,8 @@
     <section id="project">
         <div id="project-container">
             <div class="title">Projects</div>
+
+
             <div class="project-item">
                 <div class="project-left">
                     <div class="project-type">Personal Project</div>
@@ -200,6 +226,46 @@
                     <img src="./site_redesign/images/hero-bg.avif" alt="" class="project-image">
                 </div>
             </div>
+
+
+            <div class="project-item">
+                <div class="project-left">
+                    <div class="project-type">Personal Project</div>
+                    <div class="project-title">Scrimba Module 2</div>
+                    <div class="project-skills">
+                        <div class="project-skill">HTML</div>
+                        <div class="project-skill">CSS</div>
+                        <div class="project-skill">Javascript</div>
+                    </div>
+                    <a href="https://andybrocklesby-town-website.netlify.app/" target="_blank">
+                        <div class="project-btn">View Project</div>
+                    </a>
+                </div>
+                <div class="project-right">
+                    <img src="./images/module2.png" alt="" class="project-image">
+                </div>
+            </div>
+
+
+            <div class="project-item">
+                <div class="project-left">
+                    <div class="project-type">Personal Project</div>
+                    <div class="project-title">GIFt Card Project</div>
+                    <div class="project-skills">
+                        <div class="project-skill">HTML</div>
+                        <div class="project-skill">CSS</div>
+                        <div class="project-skill">Javascript</div>
+                    </div>
+                    <a href="https://andybrocklesby-giftcardproject.netlify.app/" target="_blank">
+                        <div class="project-btn">View Project</div>
+                    </a>
+                </div>
+                <div class="project-right">
+                    <img src="./images/GIFtCard.png" alt="" class="project-image">
+                </div>
+            </div>
+
+
         </div>
     </section>
 
